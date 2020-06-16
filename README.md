@@ -1,2 +1,2 @@
-# Leafony Web Bluetooth Exsample App
+# Leafony Web Bluetooth Example App
 
