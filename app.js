@@ -62,9 +62,9 @@ buttonConnect.addEventListener( 'click', function () {
 
 
 buttonDisconnect.addEventListener( 'click', function () {
-	
+
 	leafony.disconnect();
-	leafony = null;	
+	leafony = null;
 
 	clearTable();
 	buttonConnect.style.display = '';
@@ -96,9 +96,9 @@ function updateTable ( state ) {
 	let hours    = ( '00' + date.getHours() ).slice( -2 );
 	let minutes  = ( '00' + date.getMinutes() ).slice( -2 );
 	let seconds  = ( '00' + date.getSeconds() ).slice( -2 );
-	let datetime = year + '/' + month + '/' + day + ' ' + 
+	let datetime = year + '/' + month + '/' + day + ' ' +
 				   hours + ':' + minutes + ':' + seconds;
-				   
+
 	textDeviceName.innerText = state.devn;
 	textUniqueName.innerText = state.unin;
 	textDateTime.innerText = datetime;
@@ -111,13 +111,13 @@ function updateTable ( state ) {
 
 	// Create array of reveived data and sensors data
 	let darray = new Array(
-		datetime, 
+		datetime,
 		state.devn,
 		state.unin,
-		state.temp, 
-		state.humd, 
-		state.illm, 
-		state.tilt, 
+		state.temp,
+		state.humd,
+		state.illm,
+		state.tilt,
 		state.batt,
 		state.dice);
 
